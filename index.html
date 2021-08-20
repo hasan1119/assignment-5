@@ -6,10 +6,109 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <style>
+        td {
+            font-weight: bolder;
+        }
+
+    </style>
 </head>
 
 <body>
-<h1>Hello world!</h1>
+    <main>
+        <section>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-5 p-4">
+                        <img class="img-fluid" src="./image/mac.png" alt="iMac Image">
+                    </div>
+
+                    <div class="col-7 p-4">
+                        <h1>Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
+                        <p>
+                            Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores. 7-core
+                            GPU,and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt / USB
+                            4ports Magic Mouse Magic Keyboard-Us English
+                        </p>
+
+                        <div class="memory mt-5">
+                            <h3>Memory</h3>
+                            <div class="button-group">
+                                <button type="button" class="btn btn-outline-dark">8GB unified memory</button>
+                                <button type="button" class="btn btn-outline-dark">16GB unified memory</button>
+                            </div>
+                        </div>
+
+
+                        <div class="storage mt-5">
+                            <h3>Storage</h3>
+                            <div class="button-group">
+                                <button type="button" class="btn btn-outline-dark">256GB SSD storage</button>
+                                <button type="button" class="btn btn-outline-dark">512GB SSD storage</button>
+                            </div>
+                        </div>
+
+
+
+                        <div class="delivery mt-5">
+                            <h3>Choose your delivery option</h3>
+                            <div class="button-group">
+                                <button type="button" class="btn btn-outline-dark">Friday, Aug 25 FREE Prime
+                                    Delivery</button>
+                                <button type="button" class="btn btn-outline-dark">Friday, Aug 21 Delivery charge
+                                    $20</button>
+                            </div>
+                        </div>
+
+                        <div class="price mt-5  w-50">
+                            <table class="table table-hover">
+                                <tbody>
+                                    <tr>
+                                        <td>Best Price</td>
+                                        <td>$
+                                            <span id="best-price">1299</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Extra Memory Cost</td>
+                                        <td>$
+                                            <span id="memory-cost">0</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Extra Storage Cost</td>
+                                        <td>$
+                                            <span id="storage-cost">0</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <td>Total Price</td>
+                                    <td>$
+                                        <span id="extra-total-cost">1299</span>
+                                    </td>
+                                </tfoot>
+                            </table>
+                            <div class="promo d-flex">
+                                <input type="text" class="form-control rounded-0">
+                                <button class="btn btn-danger rounded-0">Apply</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <hr>
+                <h1 class="text-center">Total: $
+                    <span id="intotal">1299</span>
+                </h1>
+            </div>
+        </section>
+    </main>
+
 
     <script src="js/app.js"></script>
 </body>
