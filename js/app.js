@@ -50,24 +50,21 @@ function updateValue(id, value) {
 
     let extraTotalElement = document.getElementById('extra-total-cost')
     let inTotalElement = document.getElementById('in-total')
-    let inTotalAmount = Number(extraTotalElement.innerText)
     extraTotalElement.innerText = extraTotalCost;
     inTotalElement.innerText = extraTotalCost;
 
 }
 
 document.getElementById('apply-btn').addEventListener('click', function () {
+    let totalElement = document.getElementById('extra-total-cost')
     let inTotalElement = document.getElementById('in-total')
     let promoInput = document.getElementById('promo-code')
     let promoValue = promoInput.value
-    console.log(promoValue);
-    let inTotalAmount = Number(inTotalElement.innerText)
-    console.log(inTotalAmount);
+    let totalAmount = Number(totalElement.innerText)
 
-    if (promoValue == 'stivekaku') {
-        let discount = (inTotalAmount / 100) * 20;
-        console.log(discount);
-        inTotalElement.innerText = inTotalAmount - discount;
+    if (promoValue == 'stevekaku') {
+        let discount = (totalAmount / 100) * 20;
+        inTotalElement.innerText = totalAmount - discount;
     }
 
     promoInput.value = ''
